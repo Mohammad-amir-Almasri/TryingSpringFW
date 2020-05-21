@@ -10,29 +10,32 @@ public class Book {
 	private int id;
 	private String name;
 	private double price;
-	
-	Book(int i, String n, double p){
-		id =i;
-		name=n;
-		price=p;
-	}
-	
-	void set(int i, String n, double p) {
-		id =i;
-		name=n;
-		price=p;
-	}
-	
-	int getId() {
+
+
+	public int getId() {
 		return id;
 	}
-	
-	double getPrice() {
-		return price;
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	
-	String getName() {
+
+	public String getName() {
 		return name;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
 
 }
