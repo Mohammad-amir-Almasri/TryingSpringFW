@@ -1,14 +1,20 @@
 package com.example.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
+@Table(name="Book")
 public class Book {
 	@Id
 	@GeneratedValue
+	@Column(name="ID")
 	private int id;
+	@Column(name="Book")
 	private String name;
+	@Column(name="PriceOfBook",unique=true,nullable=false,length=20)
 	private double price;
 
 
