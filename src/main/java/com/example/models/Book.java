@@ -10,11 +10,11 @@ import javax.persistence.Table;
 public class Book {
 	@Id
 	@GeneratedValue
-	@Column(name="ID")
+	@Column(name="id")
 	private int id;
-	@Column(name="Book")
+	@Column(name="name")
 	private String name;
-	@Column(name="PriceOfBook",unique=true,nullable=false,length=20)
+	@Column(name="priceOfBook",unique=true,nullable=false,length=20)
 	private double price;
 
 
